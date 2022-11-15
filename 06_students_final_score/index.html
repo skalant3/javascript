@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promedio de notas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <p id="promedio"></p>
+
+
+
+    <script>
+    var text='';
+    
+		//var name = prompt("Enter "+i+"name");
+		var ai1 = parseInt(prompt("Ingrese la nota final del estudiante 1: "));
+        var ai2 = parseInt(prompt("Ingrese la nota final del estudiante 2: "));
+        var ai3 = parseInt(prompt("Ingrese la nota final del estudiante 3: "));
+
+        var ai= (ai1+ai2+ai3)/3;
+		if(ai>=0){
+			text += "La nota promedio de los datos ingresados es " + ai + ".<br>";
+		}else{
+			text += "este dao " + ai + " ,no se puede leer.<br>";
+		}
+        
+	
+	document.getElementById("promedio").innerHTML = text;
+    </script>
+    
+</body>
+</html>

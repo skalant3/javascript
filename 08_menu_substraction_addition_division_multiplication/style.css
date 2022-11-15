@@ -1,0 +1,36 @@
+#add{
+    background: #d6ed9d;
+    padding: 10px;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+#sub{
+    background: #1cd8f5;
+    padding: 10px;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+#div{
+    background: #cf9de8;
+    padding: 10px;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+#multi{
+    background: #ed5c9d;
+    padding: 10px;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+h1 {
+font-family: Arial, Helvetica, sans-serif;
+}

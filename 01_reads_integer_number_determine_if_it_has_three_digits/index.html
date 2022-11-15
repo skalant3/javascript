@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio1</title> 
+ 
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<h1>Ejercicio 1</h1>
+<h2> Results:</h2>
+<body>
+
+    <p id="ejercicio1"></p>  
+    
+    <script>
+    var text='';
+    var number = prompt("Ingresa una cantidad, y voy a decirte si tiene tres dígitos :");
+    //ai=number.length;
+    var number1=number;
+    var ai=0;
+    while(number>1)
+    {
+        number=number/10;
+        ai++;
+    }
+        if(ai==3){
+			text += number1 + "("+ai+") = Muy bien, Sí tiene tres dígitos.<br>";
+		}else if(ai>3){
+			text += number1 + "("+ai+") = No tiene tres dígitos.<br>";
+		}else if(ai<3){
+			text += number1 + "("+ai+") = No tiene tres dígitos.<br>";
+		}else{
+			text += number1 + "("+ai+") = No es un número entero.<br>";
+		}
+
+	document.getElementById("ejercicio1").innerHTML = text;
+    </script>
+    
+</body>
+</html>

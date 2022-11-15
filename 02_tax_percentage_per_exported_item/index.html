@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taxes </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Easy fee calculator </h2>
+
+    <p id="fee"></p>
+
+    <script>
+    var text='';
+    
+		//var name = prompt("Enter "+i+"name");
+		var ai = prompt(" vamos a calcular el fee de importancion de su producto, ¿Cuánto es el valor final de su producto");
+
+		if(ai<=20){
+			text += "La persona pagó por su producto " + ai + "$, tranquilx no va a pagar impuesto .<br>";
+		}else if(ai>20 &&  ai<=40){
+            var tax =ai*0.3;
+			text += "La persona pagó por su producto " + ai + "$ debe pagar recargo extra de :" + tax + "$.<br>";
+		}else if(ai>40 &&  ai<=500){
+            var tax =ai*0.4;
+			text += "La persona pagó por su producto" + ai + "$ debe pagar recargo extra de :" + tax + "$.<br>";
+		}else if(ai>500){
+            var tax =ai*0.5;
+			text += "La persona pagó por su producto " + ai + "$ debe pagar recargo extra de :" + tax + "$.<br>";
+		}else{
+			text += "La persona pagó por su producto " + ai + " es:" + ai + " ,no se puede leer.<br>";
+		}
+	
+	document.getElementById("fee").innerHTML = text;
+    </script>
+    
+</body>
+</html>

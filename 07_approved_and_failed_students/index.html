@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aprobados y aplazados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <b>Estudiantes aprobados:</b>
+    <p id="aprovados"></p>
+    <br>
+    <b>Estudiantes Reprobados:</b>
+    <p id="reprobados"></p>
+    <br>
+    <b>OOtros-</b>
+    <p id="otros"></p>
+
+
+
+    <script>
+    var text3='';
+    var text1='';
+    var text2='';
+    for (let i = 1; i <= 5; i++) {
+		//var name = prompt("Enter "+i+"name");
+		var ai = prompt("Ingrese la nota del estudiante :"+i);
+
+		if(ai>=6.0){
+			text1 += "Estudiante " + i + "(" + ai + ").<br>";
+		}else if(ai<=5.9){
+			text2 += "Estudiante " + i + "(" + ai + ").<br>";
+		}else{
+			text3 += "Estudiante " + i + "(" + ai + ":no se pudo leer).<br>";
+		}
+	}
+	document.getElementById("aprovados").innerHTML = text1;
+    document.getElementById("reprobados").innerHTML = text2;
+    document.getElementById("otros").innerHTML = text3;
+    </script>
+    
+</body>
+</html>

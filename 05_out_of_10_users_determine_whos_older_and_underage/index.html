@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edad: Mayor o menor?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <p id="edad"></p>
+
+    <script>
+    var text='';
+    for (let i = 1; i <= 10; i++) {
+		//var name = prompt("Enter "+i+"name");
+		var ai = prompt("Ingrese la edad de la persona #:"+i);
+
+		if(ai==18){
+			text += "La edad de la persona # " + i + " es :" + ai + " , es mayor de edad en El Salvador.<br>";
+		}else if(ai>18){
+			text += "la edad de la persona #" + i + " es :" + ai + " ,mayor que 18. Es Mayor de Edad.<br>";
+		}else if(ai<18){
+			text += "La edad de la persona #" + i + " es :" + ai + " ,es menos de 18 años. Es menor de edad.<br>";
+		}else{
+			text += "la Edad de la persona #" + i + " es :" + ai + " ,no se puede leer .<br>";
+		}
+	}
+	document.getElementById("edad").innerHTML = text;
+    </script>
+
+</body>
+</html>

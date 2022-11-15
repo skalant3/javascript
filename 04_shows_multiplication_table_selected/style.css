@@ -1,0 +1,13 @@
+body {
+
+    background: #e8bbdd;
+    font-family: Arial;
+    margin: 0;
+}
+
+table {
+
+    border: "0";
+    margin: 0 auto; 
+    width:500px;
+}

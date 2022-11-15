@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shecodes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <table>
+    <tr>
+    <td colspan="3"><h2>Tabla de multiplicar</h2></td>
+    </tr>
+    <tr>
+    <td colspan="2"><h3>Instrucciones: ingresa un numero y hit en enter</h3></td>
+    </tr>
+        <tr>
+    <td width="28%">Ingresa un numero: </td>
+                <td><input type="number" onchange="printTable(this)"></td>
+        </tr>
+    <tr>
+                <td colspan="2"><span id="mul"></span></td>
+            </tr>
+        </table>
+        <script type="text/javascript">
+            function printTable(num) {
+        
+        var input = num.value;
+        
+        if(!isNaN(input)) 
+            {
+        
+        var table="";
+        var number="";
+        for(i=1;i<=10;i++) 
+                {
+        
+        number = input * i;
+        
+    table += input + " * " + i + " = " + number + "<br/>";
+        
+        }
+        document.getElementById("mul").innerHTML = table;
+        }
+        else{
+        
+        document.getElementById("mul").innerHTML = "Ingrese un dato numerico valido";
+        }
+        
+        }
+        
+        
+        </script>  
+
+
+
+    
+</body>
+</html>

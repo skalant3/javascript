@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Llamadas internacionales</title>
+</head>
+<body>
+    
+    <label for="region">Seleccione la region:</label>
+
+    <select name="region2" id="region2" onchange="myFunction()">
+        <option value="">-Seleccione-</option>
+        <option value="2.00">Centro America</option>
+        <option value="4.05">Sur America</option>
+        <option value="3.50">Europa</option>
+        <option value="6.00">Asia</option>
+        <option value="6.00">Africa</option>
+        <option value="5.00">Oceania</option>
+    </select>
+    <p id="llamadas"></p>
+
+
+
+    <script>
+    var text='';
+    
+		
+		var ai = prompt("Ingrese la cantidad de minutos aquí");
+       
+        function myFunction(){
+            var coun_amnt=document.getElementById('region2').value;
+            if(coun_amnt!=''){
+            var amount=ai*coun_amnt;
+            if(ai<30){
+                discount=amount*0.1;
+                amount=amount-discount;
+            }
+            text += "Duracion de la llamada " + ai + "minutos. <br> Cantidad total a pagar: " + amount + "$.<br>";
+            document.getElementById("llamadas").innerHTML = text;
+            }else{
+                alert("Choose region2");
+            }
+            amount=0;
+            discount=0;
+
+        }
+	
+    </script>
+
+
+</body>
+</html>
